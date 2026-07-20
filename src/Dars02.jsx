@@ -1384,9 +1384,13 @@ const FOREST_WILD = [
   { ch: '🐺', label: "bo'ri" }, { ch: '🦔', label: 'tipratikan' },
   { ch: '🦉', label: 'boyqush' }, { ch: '🐿️', label: 'olmaxon' },
 ];
+// FAQAT aniq UY hayvonlari: o'rmonda ham uchraydigan hayvon (echki, quyon,
+// o'rdak) bu yerga qo'yilmaydi — bola haqli ravishda "u ham o'rmonda
+// yashaydi" deb o'ylab, javobni topa olmay qoladi.
 const FOREST_ODD = [
   { ch: '🐄', label: 'sigir' }, { ch: '🐑', label: "qo'y" },
-  { ch: '🐔', label: 'tovuq' }, { ch: '🐐', label: 'echki' },
+  { ch: '🐔', label: 'tovuq' }, { ch: '🐴', label: 'ot' },
+  { ch: '🐓', label: "xo'roz" },
 ];
 const buildForestItems = () => {
   const wild = shuffleArr([...FOREST_WILD]).slice(0, 4)
