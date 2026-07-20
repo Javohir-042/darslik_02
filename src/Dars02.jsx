@@ -2069,6 +2069,9 @@ export default function Dars02({ ttsApiBase, voiceGender, onFinished }) {
 
   // Yulduz parvozi: pop -> hisoblagichga uchadi -> +1 ("chiling!")
   const startFlight = useCallback((pt) => {
+    // yulduz QAYSI sahifada topilgan bo'lsa — o'sha sahifa hisobiga yoziladi
+    // (parvoz tugaguncha bola keyingi sahifaga o'tib ketsa ham adashmaydi)
+    const startPage = pageRef.current;
     setFlight({ x: pt.x, y: pt.y, phase: 'init', tx: pt.x, ty: pt.y });
     later(() => setFlight(f => (f ? { ...f, phase: 'pop' } : f)), 30);
     later(() => {
@@ -2084,7 +2087,7 @@ export default function Dars02({ ttsApiBase, voiceGender, onFinished }) {
       sfxChiling();
       setBump(true);
       later(() => setBump(false), 550);
-      const p = pageRef.current;
+      const p = startPage;
       const got = starsByRef.current[p] || 0;
       if (got < (PAGE_MAX[p] || 0)) {
         starsByRef.current[p] = got + 1;
