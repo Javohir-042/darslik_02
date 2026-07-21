@@ -351,6 +351,7 @@ const FoxSVG = ({ mood = 'smile', hat = true, className = '' }) => (
 // import yo'q. Kalit: variation-selector (FE0F) olib tashlangan belgi.
 // emojiSrc() birinchi murojaatda data-URI yasab keshlaydi.
 const EMOJI_RAW = {
+  '🌻': "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 36 36\"><path fill=\"#3E721D\" d=\"M28 27c-8 0-8 6-8 6V22h-4v11s0-6-8-6c-4 0-7-2-7-2s0 9 9 9h6s0 2 2 2 2-2 2-2h6c9 0 9-9 9-9s-3 2-7 2z\"/><path fill=\"#FFAC33\" d=\"M21.125 27.662c-.328 0-.651-.097-.927-.283l-2.323-1.575-2.322 1.575c-.277.186-.601.283-.929.283-.143 0-.287-.018-.429-.057-.462-.123-.851-.441-1.06-.874l-1.225-2.527-2.797.204c-.04.002-.079.004-.119.004-.438 0-.86-.174-1.17-.484-.34-.342-.516-.81-.481-1.288l.201-2.8-2.523-1.225c-.432-.209-.751-.598-.876-1.062-.125-.464-.042-.958.228-1.356l1.573-2.323-1.573-2.322c-.27-.398-.353-.892-.228-1.357.125-.462.444-.851.876-1.06L7.544 7.91l-.201-2.797c-.034-.48.142-.951.481-1.289.31-.312.732-.485 1.17-.485.04 0 .079 0 .119.003l2.797.201 1.225-2.523c.209-.432.598-.751 1.06-.876.142-.038.285-.057.429-.057.328 0 .651.098.929.285l2.322 1.573L20.198.372c.275-.188.599-.285.927-.285.144 0 .29.02.428.057.465.125.854.444 1.062.876l1.225 2.523 2.8-.201c.037-.003.078-.003.116-.003.438 0 .858.173 1.172.485.338.338.515.809.48 1.289l-.204 2.797 2.527 1.225c.433.209.751.598.874 1.06.124.465.043.96-.227 1.357l-1.575 2.322 1.575 2.323c.269.398.351.892.227 1.356-.123.464-.441.852-.874 1.062l-2.527 1.225.204 2.8c.034.478-.143.946-.48 1.288-.313.311-.734.484-1.172.484-.038 0-.079-.002-.116-.004l-2.8-.204-1.225 2.527c-.209.433-.598.751-1.062.874-.139.04-.284.057-.428.057z\"/><circle fill=\"#732700\" cx=\"18\" cy=\"14\" r=\"7\"/></svg>",
   '🌲': "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 36 36\"><path fill=\"#662113\" d=\"M22 33c0 2.209-1.791 3-4 3s-4-.791-4-3l1-9c0-2.209.791-2 3-2s3-.209 3 2l1 9z\"/><path fill=\"#5C913B\" d=\"M31.406 27.297C24.443 21.332 21.623 12.791 18 12.791c-3.623 0-6.443 8.541-13.405 14.506-2.926 2.507-1.532 3.957 2.479 3.667 3.576-.258 6.919-1.069 10.926-1.069s7.352.812 10.926 1.069c4.012.29 5.405-1.16 2.48-3.667z\"/><path fill=\"#3E721D\" d=\"M29.145 24.934C23.794 20.027 20.787 13 18 13c-2.785 0-5.793 7.027-11.144 11.934-4.252 3.898 5.572 4.773 11.144 0 5.569 4.773 15.396 3.898 11.145 0z\"/><path fill=\"#5C913B\" d=\"M29.145 20.959C23.794 16.375 20.787 9.811 18 9.811c-2.785 0-5.793 6.564-11.144 11.148-4.252 3.642 5.572 4.459 11.144 0 5.569 4.459 15.396 3.642 11.145 0z\"/><path fill=\"#3E721D\" d=\"M26.7 17.703C22.523 14.125 20.176 9 18 9c-2.174 0-4.523 5.125-8.7 8.703-3.319 2.844 4.35 3.482 8.7 0 4.349 3.482 12.02 2.844 8.7 0z\"/><path fill=\"#5C913B\" d=\"M26.7 14.726c-4.177-3.579-6.524-8.703-8.7-8.703-2.174 0-4.523 5.125-8.7 8.703-3.319 2.844 4.35 3.481 8.7 0 4.349 3.481 12.02 2.843 8.7 0z\"/><path fill=\"#3E721D\" d=\"M25.021 12.081C21.65 9.193 19.756 5.057 18 5.057c-1.755 0-3.65 4.136-7.021 7.024-2.679 2.295 3.511 2.809 7.021 0 3.51 2.81 9.701 2.295 7.021 0z\"/><path fill=\"#5C913B\" d=\"M25.021 9.839C21.65 6.951 19.756 2.815 18 2.815c-1.755 0-3.65 4.136-7.021 7.024-2.679 2.295 3.511 2.809 7.021 0 3.51 2.81 9.701 2.295 7.021 0z\"/><path fill=\"#3E721D\" d=\"M23.343 6.54C20.778 4.342 19.336 1.195 18 1.195c-1.335 0-2.778 3.148-5.343 5.345-2.038 1.747 2.671 2.138 5.343 0 2.671 2.138 7.382 1.746 5.343 0z\"/><path fill=\"#5C913B\" d=\"M23.343 5.345C20.778 3.148 19.336 0 18 0c-1.335 0-2.778 3.148-5.343 5.345-2.038 1.747 2.671 2.138 5.343 0 2.671 2.138 7.382 1.746 5.343 0z\"/></svg>",
   '🌳': "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 36 36\"><path fill=\"#662113\" d=\"M22 33c0 2.209-1.791 3-4 3s-4-.791-4-3l1-9c0-2.209.791-2 3-2s3-.209 3 2l1 9z\"/><path fill=\"#5C913B\" d=\"M34 17c0 8.837-7.163 12-16 12-8.836 0-16-3.163-16-12C2 8.164 11 0 18 0s16 8.164 16 17z\"/><g fill=\"#3E721D\"><ellipse cx=\"6\" cy=\"21\" rx=\"2\" ry=\"1\"/><ellipse cx=\"30\" cy=\"21\" rx=\"2\" ry=\"1\"/><ellipse cx=\"10\" cy=\"25\" rx=\"2\" ry=\"1\"/><ellipse cx=\"14\" cy=\"22\" rx=\"2\" ry=\"1\"/><ellipse cx=\"10\" cy=\"16\" rx=\"2\" ry=\"1\"/><ellipse cx=\"7\" cy=\"12\" rx=\"2\" ry=\"1\"/><ellipse cx=\"29\" cy=\"12\" rx=\"2\" ry=\"1\"/><ellipse cx=\"14\" cy=\"10\" rx=\"2\" ry=\"1\"/><ellipse cx=\"22\" cy=\"10\" rx=\"2\" ry=\"1\"/><ellipse cx=\"26\" cy=\"16\" rx=\"2\" ry=\"1\"/><ellipse cx=\"18\" cy=\"17\" rx=\"2\" ry=\"1\"/><ellipse cx=\"22\" cy=\"22\" rx=\"2\" ry=\"1\"/><ellipse cx=\"18\" cy=\"26\" rx=\"2\" ry=\"1\"/><ellipse cx=\"26\" cy=\"25\" rx=\"2\" ry=\"1\"/></g></svg>",
   '🌸': "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 36 36\"><path fill=\"#F4ABBA\" d=\"M31.298 20.807c4.197-1.363 5.027-3.182 4.191-6.416-.952.308-2.105-.001-2.272-.518-.168-.513.581-1.443 1.533-1.753-1.223-3.107-2.964-4.089-7.161-2.727-1.606.522-3.238 1.492-4.655 2.635C23.582 10.327 24 8.475 24 6.786c0-4.412-1.473-5.765-4.807-5.968 0 1-.652 2-1.193 2s-1.194-1-1.194-2C13.472 1.021 12 2.374 12 6.786c0 1.689.417 3.541 1.066 5.241-1.416-1.142-3.049-2.111-4.655-2.633-4.197-1.364-5.938-.381-7.162 2.727.951.31 1.701 1.238 1.534 1.753-.167.515-1.32.826-2.271.518-.837 3.233-.005 5.052 4.19 6.415 1.606.521 3.497.697 5.314.605-1.524.994-2.95 2.247-3.943 3.613-2.594 3.57-2.197 5.53.381 7.654.588-.809 1.703-1.235 2.142-.917.438.317.378 1.511-.21 2.32 2.816 1.795 4.803 1.565 7.396-2.003.993-1.366 1.743-3.111 2.218-4.867.475 1.757 1.226 3.501 2.218 4.867 2.594 3.57 4.58 3.798 7.397 2.003-.587-.81-.649-2.002-.21-2.321.437-.317 1.553.107 2.142.917 2.577-2.123 2.973-4.083.381-7.653-.993-1.366-2.42-2.619-3.943-3.613 1.816.092 3.706-.084 5.313-.605zM18 20.337c-.162-.292-.353-.538-.588-.709-.234-.171-.528-.276-.856-.341.228-.244.403-.502.493-.778.09-.275.1-.587.059-.919.302.141.602.228.892.228s.59-.087.894-.229c-.041.332-.031.644.059.919.09.276.265.534.492.778-.327.065-.621.17-.855.341-.236.172-.428.418-.59.71z\"/><g fill=\"#FFF\"><path d=\"M16.795 18.685c-.12.54-.653.88-1.193.76l-5.858-1.302c-.539-.12-.879-.653-.759-1.193.12-.539.654-.879 1.193-.759l5.857 1.302c.54.12.88.653.76 1.192zm.976.218c.12-.54.654-.88 1.193-.76l5.857 1.302c.54.12.879.653.76 1.193-.12.538-.654.879-1.193.759l-5.857-1.302c-.54-.118-.88-.654-.76-1.192z\"/><path d=\"M17.771 18.903c-.466.296-1.083.159-1.38-.308l-3.221-5.061c-.296-.466-.16-1.084.307-1.38.466-.297 1.084-.159 1.38.307l3.222 5.062c.295.466.158 1.083-.308 1.38zm.797 1.252c.466-.296 1.084-.159 1.38.307l3.223 5.062c.296.467.159 1.083-.308 1.381-.466.296-1.084.159-1.381-.307l-3.221-5.062c-.296-.466-.157-1.084.307-1.381z\"/><path d=\"M17.988 17.927c-.539-.12-.879-.654-.759-1.193l1.302-5.857c.119-.539.652-.879 1.192-.759.54.12.879.654.759 1.193l-1.301 5.857c-.119.538-.654.879-1.193.759zm-.217.976c.539.119.879.653.759 1.192l-1.3 5.857c-.121.54-.654.88-1.194.76-.538-.12-.878-.654-.76-1.193l1.303-5.857c.119-.539.653-.879 1.192-.759z\"/><path d=\"M17.771 18.902c-.297-.466-.159-1.083.307-1.38l5.062-3.221c.466-.296 1.084-.16 1.38.307.297.466.159 1.083-.307 1.38l-5.062 3.221c-.466.297-1.084.16-1.38-.307z\"/><path d=\"M17.771 18.902c.296.467.159 1.084-.307 1.381l-5.062 3.222c-.466.296-1.083.16-1.381-.308-.296-.465-.159-1.083.307-1.38l5.062-3.222c.467-.296 1.085-.158 1.381.307z\"/></g><path d=\"M22.012 25.566c.932-.592 2.168-.317 2.762.614.593.932.318 2.168-.614 2.762-.932.593-2.168.318-2.762-.614-.592-.932-.318-2.168.614-2.762zM14.55 13.841c-.932.593-2.168.319-2.761-.613-.593-.932-.318-2.168.614-2.761.932-.593 2.168-.318 2.761.613.593.932.318 2.168-.614 2.761zm1.92 10.918c1.078.241 1.758 1.31 1.52 2.388-.24 1.078-1.308 1.758-2.387 1.519-1.079-.24-1.758-1.309-1.519-2.387.239-1.079 1.308-1.758 2.386-1.52zm3.037-13.665c-1.078-.239-1.758-1.308-1.518-2.386.239-1.078 1.308-1.758 2.386-1.519 1.078.24 1.759 1.308 1.519 2.386-.241 1.079-1.309 1.758-2.387 1.519zm-6.013 10.53c.592.933.317 2.169-.614 2.763-.932.593-2.168.318-2.762-.615-.593-.931-.318-2.167.613-2.761.933-.592 2.169-.318 2.763.613zm9.339-5.943c-.593-.932-.317-2.168.614-2.761.932-.593 2.168-.318 2.761.614s.317 2.168-.613 2.761c-.933.593-2.169.318-2.762-.614zm.795 4.524c.24-1.079 1.309-1.759 2.387-1.52 1.078.24 1.758 1.309 1.519 2.387-.24 1.078-1.309 1.758-2.387 1.518-1.079-.238-1.758-1.307-1.519-2.385zm-12.69-2.821c-.24 1.079-1.308 1.758-2.386 1.519-1.078-.24-1.758-1.309-1.519-2.387.239-1.078 1.308-1.758 2.386-1.519 1.079.241 1.758 1.309 1.519 2.387z\" fill=\"#EA596E\"/><circle fill=\"#FFCC4D\" cx=\"18\" cy=\"18.818\" r=\"4\"/></svg>",
@@ -1015,7 +1016,8 @@ const CFG_FLOWERS = {
     { node: <EmojiArt ch="🌹"/>, label: 'qizil gul' },
     { node: <EmojiArt ch="🌹"/>, label: 'qizil gul' },
     { node: <EmojiArt ch="🌹"/>, label: 'qizil gul' },
-    { node: <EmojiArt ch="🌹" hue={60}/>, label: 'sariq gul', odd: true },
+    // hue-filtr to'q qizilni jigarrangga burardi — filtrsiz haqiqiy sariq gul
+    { node: <EmojiArt ch="🌻"/>, label: 'sariq gul', odd: true },
   ],
   theme: {
     bg: GAME_BG,
@@ -1560,6 +1562,11 @@ const BONUS_VOICE = "E'tibor bering — bu safar ortiqcha bitta emas, ikkita eka
 const BONUS_POS = [
   { x: 13, y: 62 }, { x: 31, y: 36 }, { x: 50, y: 26 }, { x: 69, y: 36 }, { x: 87, y: 62 },
 ];
+// MOBIL (<=600px): doiralar bir-biriga tegmasligi uchun kengroq yoyilgan
+// yarim doira + kichikroq doira (19%) ishlatiladi — desktopga TEGILMAYDI
+const BONUS_POS_M = [
+  { x: 12, y: 64 }, { x: 30, y: 36 }, { x: 50, y: 22 }, { x: 70, y: 36 }, { x: 88, y: 64 },
+];
 const BONUS_THEME = {
   bg: GAME_BG,
   decor: [
@@ -1576,18 +1583,20 @@ const BONUS_THEME = {
 };
 
 // obyektlar yarim doira bo'ylab DOIMIY tartibda turadi
-const BONUS_ITEMS = [
+const BONUS_BASE = [
   { node: <EmojiArt ch="🍏"/>, label: 'yashil olma' },
   { node: <EmojiArt ch="🍊"/>, label: 'apelsin', odd: true },
   { node: <EmojiArt ch="🍏"/>, label: 'yashil olma' },
   { node: <EmojiArt ch="🍇"/>, label: 'uzum', odd: true },
   { node: <EmojiArt ch="🍏"/>, label: 'yashil olma' },
-].map((it, i) => ({ ...it, ...BONUS_POS[i] }));
+];
 
 const BonusTwoPage = ({ onBack, onNext }) => {
   const voice = useVoice(BONUS_VOICE);
   const { onCorrect } = useFlightApi();
-  const items = BONUS_ITEMS;
+  // mobilda: yoyilgan pozitsiyalar + kichikroq doira; desktopda avvalgidek
+  const isMob = typeof window !== 'undefined' && window.innerWidth <= 600;
+  const items = BONUS_BASE.map((it, i) => ({ ...it, ...(isMob ? BONUS_POS_M : BONUS_POS)[i] }));
   const [found, setFound] = useState(() => new Set());   // topilgan indekslar
   const [shaking, shake] = useShake();
   const [shakeIdx, setShakeIdx] = useState(null);
@@ -1633,7 +1642,7 @@ const BonusTwoPage = ({ onBack, onNext }) => {
           {items.map((it, i) => (
             <button key={i} type="button"
               className={`d2-scene-item circ ${found.has(i) ? 'ok' : ''} ${shakeIdx === i ? 'd2-shake' : ''}`}
-              style={{ left: `${it.x}%`, top: `${it.y}%`, width: `${sceneW(15)}%` }}
+              style={{ left: `${it.x}%`, top: `${it.y}%`, width: `${isMob ? 19 : 15}%` }}
               onClick={(e) => pick(it, i, e.currentTarget)}
               aria-label={it.label}>
               {it.node}
@@ -2075,24 +2084,59 @@ const PAGE_MAX = {
 const TOTAL_STARS = Object.values(PAGE_MAX).reduce((a, b) => a + b, 0); // 28
 const LAST_PAGE = 19;
 
+// ============================================================
+// SESSIYA XOTIRASI — bola o'yindan chiqib ketsa yoki refresh bossa,
+// jarayon YO'QOLMAYDI: sahifa, yulduzlar va sahifama-sahifa hisob
+// sessionStorage da turadi (tab yopilganda o'zi tozalanadi; yozuv ~60
+// bayt — tezlikka ta'sir qilmaydi). "Qaytadan o'ynash" — tozalaydi.
+// ============================================================
+const SAVE_KEY = 'dars02-log-2-01-v1';
+const loadProgress = () => {
+  try {
+    const raw = window.sessionStorage.getItem(SAVE_KEY);
+    if (!raw) return null;
+    const d = JSON.parse(raw);
+    if (typeof d.page !== 'number' || typeof d.stars !== 'number') return null;
+    return d;
+  } catch (e) { return null; }
+};
+const saveProgress = (data) => {
+  try { window.sessionStorage.setItem(SAVE_KEY, JSON.stringify(data)); } catch (e) { /* no-op */ }
+};
+const clearProgress = () => {
+  try { window.sessionStorage.removeItem(SAVE_KEY); } catch (e) { /* no-op */ }
+};
+
 export default function Dars02({ ttsApiBase, voiceGender, onFinished }) {
   configureLesson({ ttsApiBase: ttsApiBase || '', voiceGender: voiceGender || 'f' });
 
-  // VAQTINCHA (mobil test): ?p=N orqali sahifa tanlash — test tugagach olib tashlanadi
+  // saqlangan jarayon (refresh/chiqib-kirishdan keyin tiklash uchun)
+  const savedRef = useRef(typeof window !== 'undefined' ? loadProgress() : null);
+  // VAQTINCHA (mobil test): ?p=N orqali sahifa tanlash — test tugagach olib tashlanadi.
+  // ?p= berilmagan bo'lsa saqlangan sahifadan davom etadi.
   const [page, setPage] = useState(() => {
     if (typeof window === 'undefined') return 0;
-    const n = parseInt(new URLSearchParams(window.location.search).get('p') || '0', 10);
-    return Number.isFinite(n) ? Math.min(LAST_PAGE, Math.max(0, n)) : 0;
+    const q = new URLSearchParams(window.location.search).get('p');
+    if (q !== null) {
+      const n = parseInt(q, 10);
+      return Number.isFinite(n) ? Math.min(LAST_PAGE, Math.max(0, n)) : 0;
+    }
+    return savedRef.current ? Math.min(LAST_PAGE, Math.max(0, savedRef.current.page)) : 0;
   });
-  const [stars, setStars] = useState(0);
+  const [stars, setStars] = useState(() => (savedRef.current ? savedRef.current.stars : 0));
   const [flight, setFlight] = useState(null);   // { x, y, phase:'init'|'pop'|'go', tx, ty }
   const [bump, setBump] = useState(false);
   const counterRef = useRef(null);
   const timersRef = useRef([]);
   const pageRef = useRef(0);
-  const starsByRef = useRef({});                // sahifa -> olingan yulduzlar (limit)
+  // sahifa -> olingan yulduzlar (limit); saqlangan jarayondan tiklanadi
+  const starsByRef = useRef((savedRef.current && savedRef.current.starsBy) || {});
   useEffect(() => { pageRef.current = page; }, [page]);
   useEffect(() => () => timersRef.current.forEach(clearTimeout), []);
+  // har sahifa/yulduz o'zgarishida jarayonni saqlaymiz (refreshga chidamli)
+  useEffect(() => {
+    saveProgress({ page, stars, starsBy: starsByRef.current });
+  }, [page, stars]);
   const later = (fn, ms) => { timersRef.current.push(setTimeout(fn, ms)); };
 
   // Yulduz parvozi: pop -> hisoblagichga uchadi -> +1 ("chiling!")
@@ -2126,7 +2170,7 @@ export default function Dars02({ ttsApiBase, voiceGender, onFinished }) {
 
   const flightApi = React.useMemo(() => ({ onCorrect: startFlight }), [startFlight]);
 
-  const replay = () => { setStars(0); starsByRef.current = {}; setPage(0); };
+  const replay = () => { clearProgress(); setStars(0); starsByRef.current = {}; setPage(0); };
 
   const finishedRef = useRef(false);
   useEffect(() => {
